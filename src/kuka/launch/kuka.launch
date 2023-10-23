@@ -1,0 +1,6 @@
+<launch>
+
+	<node name="kuka_test" pkg="kuka" type="kuka_test.py" output="screen"/>
+	<node name="listener" pkg="kuka" type="listener.py" />
+
+</launch>

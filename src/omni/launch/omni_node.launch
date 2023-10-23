@@ -1,0 +1,11 @@
+<launch>
+	<node 
+	
+	pkg="omni" 
+	type="omni_node" 
+	name="omni_node" 
+	output="screen" 
+	launch-prefix="sudo" />
+
+	
+</launch>

@@ -1,0 +1,41 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(omni)
+
+find_package(OpenGL REQUIRED
+)
+
+
+
+include_directories(
+	/home/matteo/chai3d-3.2.0/src
+	/home/matteo/chai3d-3.2.0/external/Eigen
+	/home/matteo/chai3d-3.2.0/extras/GLFW/include
+	/home/matteo/chai3d-3.2.0/external/glew/include
+	/usr/include/GL
+	${OPENGL_INCLUDE_DIR}
+)
+link_directories(
+	/home/matteo/chai3d-3.2.0/lib/release/lin-x86_64-cc
+	/home/matteo/chai3d-3.2.0/external/DHD/lib/lin-x86_64
+	/home/matteo/chai3d-3.2.0/extras/GLFW/lib/release/lin-x86_64-cc
+)
+
+add_executable(omni_node src/omni_node.cpp src/omni_device.cpp)
+target_link_libraries(
+	omni_node
+	chai3d
+	drd
+	hdPhantom
+	usb-1.0
+	rt
+	pthread
+	dl
+	#gl
+	glfw
+	${OPENGL_LIBRARIES}
+	X11
+	Xcursor
+	Xrandr
+	Xinerama
+)
+
