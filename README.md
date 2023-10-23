@@ -19,3 +19,4 @@ The code is divided in 3 main platforms:
 
 ## Note:
 The file "**Dissertation.pfd**" gives a full overview of the project, the goals and our achivements
+In **ROS map.png** you can find a map on how the messages are sended and received from the different ROS nodes
