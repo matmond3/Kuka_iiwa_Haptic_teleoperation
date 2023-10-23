@@ -17,5 +17,5 @@ The code is divided in 3 main platforms:
     iiwa and to the Haptic Device. Note that the Haptic device is automatically detected by the system
 - **RGBD Camera**
 
-Note:
+## Note:
 The file "**Dissertation.pfd**" gives a full overview of the project, the goals and our achivements
